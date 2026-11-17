@@ -20,3 +20,18 @@ python3 tools/diagram/render.py Task1/dfd/*.drawio
 
 Requirements: Python 3.9+, Google Chrome at `/Applications/Google Chrome.app`, network access to
 `viewer.diagrams.net` for the viewer script.
+
+## Task 2: C4 diagrams
+
+`c4_lib.py` writes C4 elements (person, software system, container, database, boundary, relationship)
+as draw.io `<object>` cells with `c4*` attributes and placeholder labels, the same way the course's
+as-is landscape diagram is built, so every element stays editable through draw.io's "Edit Data".
+Colours distinguish functional containers, Privacy by Design blocks, the analytics layer and legacy
+or external systems; a yellow "MVP" badge marks what the intermediate state needs.
+
+`gen_c4.py` holds the content of the Task 2 target-state context and container diagrams.
+
+```bash
+python3 tools/diagram/gen_c4.py Task2
+python3 tools/diagram/render.py Task2/*.drawio
+```
