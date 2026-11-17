@@ -45,3 +45,13 @@ every store and the in-transit protection on every hop, reusing `c4_lib.py`.
 python3 tools/diagram/gen_encryption_map.py Task3
 python3 tools/diagram/render.py Task3/Medikamente_encryption_map.drawio
 ```
+
+## Task 4: Ishikawa diagram
+
+`gen_ishikawa.py` draws the fishbone diagram of migration bottlenecks: the categories and causes are
+data in the script, the geometry (spine, bones, ticks) is computed.
+
+```bash
+python3 tools/diagram/gen_ishikawa.py Task4
+python3 tools/diagram/render.py Task4/Medikamente_migration_ishikawa.drawio
+```
