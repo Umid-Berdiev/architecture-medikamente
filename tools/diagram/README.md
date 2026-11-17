@@ -35,3 +35,13 @@ or external systems; a yellow "MVP" badge marks what the intermediate state need
 python3 tools/diagram/gen_c4.py Task2
 python3 tools/diagram/render.py Task2/*.drawio
 ```
+
+## Task 3: encryption map
+
+`gen_encryption_map.py` draws the trust zones of the target architecture with the at-rest protection on
+every store and the in-transit protection on every hop, reusing `c4_lib.py`.
+
+```bash
+python3 tools/diagram/gen_encryption_map.py Task3
+python3 tools/diagram/render.py Task3/Medikamente_encryption_map.drawio
+```
